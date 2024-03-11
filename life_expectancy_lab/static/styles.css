@@ -1,0 +1,89 @@
+.map_legend {
+  stroke: 2;
+  top: 0
+}
+.legend {
+  stroke-width:3;
+  stroke-linecap: round;
+  font-size: 10px;
+}
+
+.fever_line_Average {
+  stroke-width:3;
+  stroke: gray;
+  stroke-dasharray: 10;
+
+}
+.fever_line_Average:hover {
+  stroke: #ec008c;
+}
+
+
+.fever_line_Canada {
+  fill:none;
+  stroke-width:3;
+  stroke: red;
+}
+.fever_line_Canada:hover {
+  stroke: #ec008c;
+}
+  
+.fever_line_US {
+  fill:none;
+  stroke-width:3;
+  stroke: blue;
+}
+.fever_line_US:hover {
+  stroke: #ec008c;
+}
+
+.fever_line_Mexico {
+  fill:none;
+  stroke-width:3;
+  stroke: green;
+}
+.fever_line_Mexico:hover {
+  stroke: #ec008c;
+}
+.text {
+  font-family: 'PT serif';
+  text-anchor: middle; 
+  color:#000000;
+  fill:#000000;
+}
+.title {
+  font-size: 32px;
+}
+.graphtitle {
+  font-size: 15px;
+}
+.axis_label{
+  font-size:14;
+}
+.axis {
+  stroke: #333333;
+  stroke-width: 3;
+}
+.tickmark {
+  stroke: #333333;
+  stroke-width: 2;
+}
+.tick_number{
+  font-size: 13px;
+  font-weight: normal;
+}
+
+body{
+  background-color: #ebe4df;
+}
+
+svg{
+  border-style: solid;
+  border-width: 1px;
+}
+
+.line {
+  stroke: #222222;
+  stroke-width: 3;
+  opacity: .9;
+}

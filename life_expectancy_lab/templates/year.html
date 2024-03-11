@@ -1,0 +1,30 @@
+
+<html>
+<head>
+  <title>{{year}} Data</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1 class="title text"> {{year}} Data, Life Expectancy Lab - Emma Leifer</h1>
+
+  <div id="north_america">
+    {% include 'north_america.svg' %}
+    <!-- <ul class="US">
+      {for } -->
+    </ul>
+  </div>
+  <!-- <script>
+    function color_change () {
+      document.getElementByClassName('US').setAttribute("fill",US_color);
+    // document.getElementByClassName('Canada').setAttribute("fill",C_color)
+    // document.getElementByClassName('Mexico').setAttribute("fill",M_color)
+    }
+
+  </script> -->
+
+  <footer>
+    All data from <a href="https://data.worldbank.org/indicator/SP.DYN.LE00.IN?locations=MX-US-CA"> The World Bank</a>.
+  </footer>
+</body>
+</html>

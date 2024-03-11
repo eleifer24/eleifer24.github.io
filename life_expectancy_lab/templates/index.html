@@ -1,0 +1,36 @@
+
+<html>
+<head>
+  <title> Life Expectancy Lab</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT serif">
+</head>
+<body>
+
+  <h1 class="title text"> Life Expectancy Lab - Emma Leifer</h1>
+
+  <div id="line_graph_all">
+    {% include 'line_graph.svg' %}
+  </div>
+
+  <div>
+    <form action="/year" method="GET">
+      <label for="year">Choose a year:</label><br>
+      <select name="year" id="year_select">
+        {% for y in all_years %}
+          {% if y == year %}
+            <option value="{{y}}" selected>{{y}}</option>
+          {% else %}
+            <option value="{{y}}">{{y}}</option>
+          {% endif %}
+        {% endfor %}
+      </select>
+      <input type="submit" value="Submit">
+    <form>
+  </div>
+
+  <footer>
+    All data from <a href="https://data.worldbank.org/indicator/SP.DYN.LE00.IN?locations=MX-US-CA"> The World Bank</a>.
+  </footer>
+</body>
+</html>
